@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Opticron</title>
+    <link rel="stylesheet" href="~/css/MainLayout.css"/>
+</head>
+<body>
+    <header id="MainHeader">
+       <img  src="~/css/Assests/Logo.png"/>
+       <div id="navbar">
+           <ul>
+               <li>Our Products</li>
+               <li>Where to Buy</li>
+               <li>Help & Reviews</li>
+               <li>My Opticron</li>
+               <li>                  
+                    <input id="search" type="text" value="My Opticron..."/>
+                    <img id="searchIcon" src="~/css/Assests/searchIcon.png" />
+                   
+               </li>
+           </ul>
+          
+
+       </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+    <footer id="mainFooter">
+        <div id="leftFooter">
+            <p>Opticron Unit, Titan Court, Laporte Way, Luton, Bedfordshire , LU4 8EF, UK</p>
+            <p style="padding-top:3%;">Site map/Terms/Privacy Policy/Site by Verto</p>
+        </div>
+        <div id="rightFooter">
+            <h1>call 01582 726522</h1>
+            <h2 style="font-size:medium">email us Sales@opticron.co.uk</h2>
+            <img src="~/css/Assests/socialmedia.png"/>
+        </div>
+    </footer>
+</body>
+</html>

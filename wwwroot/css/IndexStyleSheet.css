@@ -1,0 +1,71 @@
+﻿#MainImage
+{
+    width:1280px;
+    height:300px;
+}
+#MainBody{
+    width:1280px;
+    margin-left:320px;
+}
+#ShowCase{
+    display:table;
+    margin-top:2%;
+}
+
+#heading {
+    color: rgb(155,156,160);
+    font-size: 25px;
+    display: block;
+}
+#ShowCaseDiv{
+    display:table-cell;
+    width:200px;
+    padding-right:50px;
+}
+#ShowCaseButton{
+    width:120px;
+    height:40px;
+    background-color:rgb(0,133,66);
+    color:white;
+}
+#ShowCaseImage{
+    margin-top:10px;
+    width:200px;
+    display:block;
+}
+#SpecialOffers {
+    
+    text-align:center;
+    width: 960px;
+    padding-top:2%;
+    background-color: rgb(230, 231, 232);
+}
+#SpecialOffersDisplay
+{
+
+    display:table;
+    padding-left:30px;
+}
+#SpecialOffer {
+    display: table-cell;
+    background-color: white;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-style:solid;
+    border-color: black;
+    border-width: 2px;
+}
+#SpecialOfferImage
+{
+    width:300px;
+}
+#SpecialOfferDesc{
+    padding-top:10px;
+    display:block;
+    font-style:italic;
+}
+#SpecialOfferTitle{
+    display:block;
+    font-size:25px;
+}

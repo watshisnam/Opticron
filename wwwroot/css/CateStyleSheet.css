@@ -1,0 +1,28 @@
+﻿#headingCategories {
+    text-align: center;
+    width: 960px;
+    padding-top: 2%;
+}
+#Categories {
+    display: table;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#Category {
+    display: table-cell;
+    background-color: white;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+#CategoryImage {
+    width: 100px;
+}
+
+
+#CategoryName {
+    display: block;
+    font-size: 20px;
+}

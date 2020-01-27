@@ -1,0 +1,45 @@
+﻿body {
+}
+#MainHeader {
+    background-color: rgb(230, 231, 232);
+    height: 175px;
+    width : 1920px;
+    padding-left:320px;
+    padding-top:1%;
+}
+#navbar{
+    display:inline;
+}
+li{
+    display:inline;
+    color:rgb(81,81,80);
+    padding-right:2%;
+    padding-bottom:1%;
+    padding-top:1%;
+}
+#search{
+    margin-left:8%;
+    width:10%;
+}
+#searchIcon{
+    width:20px;
+    height:20px;
+}
+#mainFooter {
+    background-color: rgb(187 , 189 , 191);
+    height: 200px;
+    width: 1920px;
+    color: white;
+    
+
+}
+#leftFooter {
+    float:left;
+    margin-left: 320px;
+    padding-top: 3%;
+}
+#rightFooter {
+    float:right;
+    margin-right:640px;
+    padding-top:1%;
+}

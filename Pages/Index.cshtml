@@ -1,0 +1,83 @@
+﻿@page
+@model Opticron.IndexModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/IndexStyleSheet.css"/>
+<link rel="stylesheet" href="~/css/CateStyleSheet.css"/>
+<body>
+    <img id="MainImage" src="~/css/Assests/MainImage.png"/>
+    <div id="MainBody">
+        <div id="ShowCase">
+            <div id="ShowCaseDiv">
+                <label id="heading"> New Products</label>
+                <img id="ShowCaseImage" src="~/css/Assests/@Model.newProduct.ProductImage" />
+                <p>@Model.newProduct.ProductDesc</p>
+                <input type="button" id="ShowCaseButton" value="New Products" />
+            </div>
+            <div id="ShowCaseDiv">
+                <label id="heading">Field Events</label>
+                <img id="ShowCaseImage" src="~/css/Assests/@Model.latestEvent.EventImage" />
+                <p>@Model.latestEvent.EventDesc</p>
+                <input type="button" id="ShowCaseButton" value="Veiw Events" />
+            </div>
+            <div id="ShowCaseDiv">
+                <label id="heading">Latest News</label>
+                <img id="ShowCaseImage" src="~/css/Assests/@Model.latestNews.NewsImage" />
+                <p>@Model.latestNews.NewsDesc</p>
+                <input type="button" id="ShowCaseButton" value="Read Article" />
+            </div>
+            <div id="ShowCaseDiv">
+                <label id="heading">Gallery</label>
+                <img id="ShowCaseImage" src="~/css/Assests/@Model.gallery.GalleryImage[1]" />
+                <p>@Model.gallery.GalleryDesc</p>
+                <input type="button" id="ShowCaseButton" value="View Gallery" />
+            </div>
+        </div>
+        <div id="SpecialOffers">
+            <label id="heading">Special Offers</label>
+            <div id="SpecialOffersDisplay">
+                <div id="SpecialOffer">
+                    <img id="SpecialOfferImage" src="~/css/Assests/@Model.specialOffers[0].OfferProd.ProductImage" />
+                    <label id="SpecialOfferDesc">@Model.specialOffers[0].OfferDesc</label>
+                    <label id="SpecialOfferTitle">@Model.specialOffers[0].OfferTitle</label>
+                </div>
+                <div id="SpecialOffer">
+                    <img id="SpecialOfferImage" src="~/css/Assests/@Model.specialOffers[1].OfferProd.ProductImage" />
+                    <label id="SpecialOfferDesc">@Model.specialOffers[1].OfferDesc</label>
+                    <label id="SpecialOfferTitle">@Model.specialOffers[1].OfferTitle</label>
+                </div>
+                 <div id="SpecialOffer">
+                    <img id="SpecialOfferImage" src="~/css/Assests/@Model.specialOffers[2].OfferProd.ProductImage" />
+                    <label id="SpecialOfferDesc">@Model.specialOffers[2].OfferDesc</label>
+                    <label id="SpecialOfferTitle">@Model.specialOffers[2].OfferTitle</label>
+                </div>
+            </div>        
+            <input type="button" id="ShowCaseButton" value="View All Offers" />
+        </div>
+        <div id="headingCategories">
+            <label id="heading">Product Categories</label>
+        </div>
+        <div id="Categories">            
+            @foreach (Opticron.Classes.Category item in Model.categories)
+            {
+            <table id="Category">
+                <tr>
+                    <td>
+                        <img id="CategoryImage" src="~/css/Assests/@item.CategoryImage" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="CategoryName">@item.CategoryName</label>
+                    </td>
+                </tr>
+            </table>
+            }
+
+        </div>
+
+    </div>
+</body>
+
